@@ -480,6 +480,7 @@ export class WebXRButton {
    * @private
    */
   __onXRButtonClick() {
+    console.log("__onXRButtonClick: ");
     if (this.session) {
       this.options.onEndSession(this.session);
     } else if (this._enabled) {
